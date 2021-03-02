@@ -22,7 +22,6 @@ class LoveLockCard extends HTMLElement {
     this.style.borderRadius = "var(--ha-card-border-radius, 2px)";
     this.style.background = "var(--paper-card-background-color)";
     this.style.display = "flex";
-    // this.style.position = "relative"
 
     const root = this.shadowRoot;
     while (root.hasChildNodes()) {
@@ -31,7 +30,7 @@ class LoveLockCard extends HTMLElement {
 
     // Wrap main card
     const wrapper = document.createElement("div");
-    wrapper.setAttribute("style", "position:relative");
+    wrapper.setAttribute("style", "position:relative;width: 100%;");
     root.appendChild(wrapper);
 
     // Password
